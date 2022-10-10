@@ -1,0 +1,24 @@
+name: demoProject
+description: ''
+version: 0.0.1
+author: vickyviji3546@gmail.com
+language: python
+buildSystem: wheel
+pipelines:
+  pipelines/pipelineDemo:
+    name: pipelineDemo
+    description: ''
+    author: vickyviji3546@gmail.com
+    mode: batch
+    language: python
+    createdAt: '2022-10-10 11:08:12'
+    datasets:
+      inputs: []
+      outputs: []
+    dependencies: {}
+datasets: {}
+templates: {}
+jobs: {}
+libraries: []
+subgraphs: {}
+dependencies: '[]'
