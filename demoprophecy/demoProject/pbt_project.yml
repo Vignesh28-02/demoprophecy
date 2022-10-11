@@ -15,7 +15,8 @@ pipelines:
     datasets:
       inputs:
       - 3574/datasets/OrdersDataset
-      outputs: []
+      outputs:
+      - 3574/datasets/OrdersDatasetOutput
     dependencies: {}
 datasets:
   datasets/OrdersDataset:
@@ -30,6 +31,18 @@ datasets:
         description: ''
         author: vickyviji3546@gmail.com
         createdAt: '2022-10-11 06:46:08'
+  datasets/OrdersDatasetOutput:
+    name: OrdersDatasetOutput
+    description: ''
+    author: vickyviji3546@gmail.com
+    createdAt: '2022-10-11 09:18:55'
+    physicalDatasets:
+      dev:
+        fabricId: 1070
+        datasetType: File
+        description: ''
+        author: vickyviji3546@gmail.com
+        createdAt: '2022-10-11 09:18:55'
 templates: {}
 jobs: {}
 libraries: []

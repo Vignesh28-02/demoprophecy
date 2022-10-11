@@ -37,16 +37,87 @@
     },
     "topLevelPackage" : "pipelinedemo"
   },
-  "connections" : [ ],
+  "connections" : [ {
+    "id" : "ap7ErrTseVCP2vd74IGgn",
+    "source" : "9kFi14eG0to2cy0SHVV43$$jvNZf7jTSS2bMxs1NM6zs",
+    "sourcePort" : "nEHb2h9nTzA2Ext0rpLAY$$lmfpz8I3pg1YCvPKH1-Vo",
+    "target" : "jx66w9Dehd5_HK6cA2us1$$n5rkGHEzTI5eyL2BDoOM-",
+    "targetPort" : "lzlfgCwv5HpttE_kyWpJO$$ln3x5ZKl7IXf__ibzXQUN"
+  }, {
+    "id" : "wUDSmeg1y_2a4c5ys956Q",
+    "source" : "jx66w9Dehd5_HK6cA2us1$$n5rkGHEzTI5eyL2BDoOM-",
+    "sourcePort" : "FiE22EK1xTfuPi5OGI1TW$$d-fqwCVdRlIiIfH-bDjOF",
+    "target" : "3F1yQpqVxncCTuG9M8O_5$$VqKkEP0Gq-mtKwddWclpe",
+    "targetPort" : "ukAEN_RXxrVf0zSBRswmv$$3D8fjvSw_ONfHwaOtGTgj"
+  } ],
   "processes" : {
+    "3F1yQpqVxncCTuG9M8O_5$$VqKkEP0Gq-mtKwddWclpe" : {
+      "id" : "3F1yQpqVxncCTuG9M8O_5$$VqKkEP0Gq-mtKwddWclpe",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "OrdersDatasetOutput",
+        "slug" : "OrdersDatasetOutput",
+        "x" : -400.5999999999999,
+        "y" : -77.3,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "ukAEN_RXxrVf0zSBRswmv$$3D8fjvSw_ONfHwaOtGTgj",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "3574/datasets/OrdersDatasetOutput"
+      }
+    },
+    "jx66w9Dehd5_HK6cA2us1$$n5rkGHEzTI5eyL2BDoOM-" : {
+      "id" : "jx66w9Dehd5_HK6cA2us1$$n5rkGHEzTI5eyL2BDoOM-",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "Filter_1",
+        "slug" : "Filter_1",
+        "x" : -592,
+        "y" : -73.79999999999995,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "lzlfgCwv5HpttE_kyWpJO$$ln3x5ZKl7IXf__ibzXQUN",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "FiE22EK1xTfuPi5OGI1TW$$d-fqwCVdRlIiIfH-bDjOF",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ "lzlfgCwv5HpttE_kyWpJO$$ln3x5ZKl7IXf__ibzXQUN##order_date" ],
+        "condition" : {
+          "format" : "sql",
+          "expression" : "year(order_date) = 2019"
+        }
+      }
+    },
     "9kFi14eG0to2cy0SHVV43$$jvNZf7jTSS2bMxs1NM6zs" : {
       "id" : "9kFi14eG0to2cy0SHVV43$$jvNZf7jTSS2bMxs1NM6zs",
       "component" : "Source",
       "metadata" : {
         "label" : "OrdersDataset",
         "slug" : "OrdersDataset",
-        "x" : -584.8000000000001,
-        "y" : 15.999999999999972,
+        "x" : -808,
+        "y" : -75.20000000000002,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
