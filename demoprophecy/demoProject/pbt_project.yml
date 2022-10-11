@@ -13,10 +13,23 @@ pipelines:
     language: python
     createdAt: '2022-10-10 11:08:12'
     datasets:
-      inputs: []
+      inputs:
+      - 3574/datasets/OrdersDataset
       outputs: []
     dependencies: {}
-datasets: {}
+datasets:
+  datasets/OrdersDataset:
+    name: OrdersDataset
+    description: ''
+    author: vickyviji3546@gmail.com
+    createdAt: '2022-10-11 06:46:08'
+    physicalDatasets:
+      dev:
+        fabricId: 1070
+        datasetType: File
+        description: ''
+        author: vickyviji3546@gmail.com
+        createdAt: '2022-10-11 06:46:08'
 templates: {}
 jobs: {}
 libraries: []

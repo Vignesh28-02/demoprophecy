@@ -43,10 +43,10 @@
       "id" : "9kFi14eG0to2cy0SHVV43$$jvNZf7jTSS2bMxs1NM6zs",
       "component" : "Source",
       "metadata" : {
-        "label" : "Source_0",
-        "slug" : "Source_0",
-        "x" : -191.2,
-        "y" : 91.6,
+        "label" : "OrdersDataset",
+        "slug" : "OrdersDataset",
+        "x" : -584.8000000000001,
+        "y" : 15.999999999999972,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -61,7 +61,9 @@
         "selectedInputFields" : [ ],
         "isCustomOutputSchema" : false
       },
-      "properties" : { }
+      "properties" : {
+        "datasetId" : "3574/datasets/OrdersDataset"
+      }
     }
   },
   "ports" : {

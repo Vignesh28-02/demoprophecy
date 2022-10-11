@@ -7,7 +7,7 @@ from prophecy.utils import *
 from pipelinedemo.graph import *
 
 def pipeline(spark: SparkSession) -> None:
-    df_Source_0 = Source_0(spark)
+    df_OrdersDataset = OrdersDataset(spark)
 
 def main():
     spark = SparkSession.builder\
